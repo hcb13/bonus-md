@@ -7,7 +7,7 @@ void relacao_01(){
 
     char nome[3] = "R01";
     int conjS[3] = {1,2,3};
-    int rho[3][2] = { {1,2}, {3,2} };
+    int rho[3][2] = { {1,2}, {3,2}, {1,1} };
 
     int reflexiva = 0;
     int simetrica = 0;
