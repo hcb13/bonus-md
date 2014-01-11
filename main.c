@@ -1,6 +1,6 @@
 /*
     Copyright © 2013 FreeUFG.
-   
+
     This file is part of BonusMD.
 
     BonusMD is free software: you can redistribute it and/or modify
@@ -20,9 +20,45 @@
 #include <stdio.h>
 #include "relacoes.h"
 
-int main()
-{
-    relacao_01();
+int main(){
+
+    //Menu de opções [por @fonzaex]
+    int opcao;
+
+    while(opcao>=1){
+        printf("\n=======================================================\n");
+        printf("=============== VERIFICANDO RELACOES ==================\n");
+        printf("=======================================================\n");
+        printf("1 - TESTAR RELACOES\n");
+        printf("0 - SAIR DO PROGRAMA\n");
+        printf("=======================================================\n");
+        printf("INFORME A OPCAO PARA SER VERIFICADA:\n");
+        scanf("%d",&opcao);
+        printf("=======================================================\n");
+
+        switch(opcao){
+        case 0:
+            opcao=-5;
+            system("cls"); //Limpar o prompt (Windows) [por @bispojr]
+            printf("=======================================================\n");
+            printf("PROGRAMA FINALIZADO COM SUCESSO!\n");
+            printf("=======================================================\n");
+            break;
+        case 1:
+            system("cls"); //Limpar o prompt (Windows) [por @bispojr]
+            relacao_01();
+            relacao_02();
+            relacao_03();
+            break;
+        default:
+            opcao=-5;
+            system("cls"); //Limpar o prompt (Windows) [por @bispojr]
+            printf("=======================================================\n");
+            printf("OPCAO INVALIDA, PROGRAMA FINALIZADO!\n");
+            printf("=======================================================\n");
+            break;
+        }
+    }
 
     return 0;
 }
