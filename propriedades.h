@@ -4,7 +4,7 @@
 //Função ehReflexiva [por @fonzaex]
 //[Adaptada por @bispojr]
 int ehReflexiva(int rho2[][2]);
-int ehReflexiva(int rho2[][2]){
+int ehReflexiva(int rho2[][2]){ // funcao para verificar se eh reflexiva, return 0 =  falso, return 1 = verdade.
 
     //AINDA FALTA PASSAR O VALOR DO CONJS POR REFERENCIA E VERIFICAR SE TODO X PERTENCE AO COJUNTO S;
     //MOSTRANDO OS SUBCONJUNTOS, EM FORMA DE MATRIZ
@@ -17,16 +17,16 @@ int ehReflexiva(int rho2[][2]){
         return 0;
     }
 }
-int ehSimetrica(){
+int ehSimetrica(){ // funcao para verificar se eh simetrica, return 0 =  falso, return 1 = verdade.
     return 1;
 }
-int ehTransitiva(){
+int ehTransitiva(){ // funcao para verificar se eh transitiva, return 0 =  falso, return 1 = verdade.
     return 0;
 }
-int ehAntiSimetrica(){
+int ehAntiSimetrica(){ // funcao para verificar se eh anti-simetrica, return 0 =  falso, return 1 = verdade.
     return 1;
 }
-int ehEquivalencia(){
+int ehEquivalencia(){ // funcao para verificar se eh anti-simetrica, return 0 =  falso, return 1 = verdade.
     return 0;
 }
 

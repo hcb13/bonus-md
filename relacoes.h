@@ -6,8 +6,8 @@
 void relacao_01(){
 
     char nome[4] = "R01";
-    int conjS[3] = {1,2,3};
-    int rho[3][2] = { {1,2}, {3,2}, {1,1} };
+    int conjS[3] = {1,2,3}; // Conjunto S definido
+    int rho[3][2] = { {1,2}, {3,2}, {1,1} }; // rho já definido
 
     int reflexiva = 0;          //Valor 0: Relação NÃO é reflexiva
     int simetrica = 0;          //Valor 0: Relação NÃO é simétrica
